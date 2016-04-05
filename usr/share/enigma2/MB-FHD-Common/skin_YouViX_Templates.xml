@@ -741,7 +741,10 @@
 	</screen>
 	<screen name="WizardStringList">
 		<widget source="list" render="Listbox" position="680,415" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand">
-			<convert type="StringList" />
+			<convert type="TemplatedMultiContent">
+				{"template":[ MultiContentEntryText(pos=(20,5),size=(1160,50),flags=RT_HALIGN_LEFT,text=0) ],
+				"fonts":[gFont("Regular",30) ],"itemHeight":50}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="WizardRedButton">
