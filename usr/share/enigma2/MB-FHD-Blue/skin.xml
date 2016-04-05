@@ -11,15 +11,15 @@
 		<resolution xres="1920" yres="1080" bpp="32" />
 	</output>
 
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Templates.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX.xml"/>
+	<include filename="/usr/share/enigma2/MB-FHD-Common/skin_YouViX_Templates.xml"/>
+	<include filename="/usr/share/enigma2/MB-FHD-Common/skin_YouViX.xml"/>
 
 	<fonts>
-		<font name="Regular" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="100" />
-		<font name="youvix-b" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-b.ttf" scale="100" />
-		<font name="youvix-r" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="100" />
-		<font name="youvix-l" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-l.ttf" scale="100" />
-		<font name="Subtitlefont" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="100" />
+		<font name="Regular" filename="/usr/share/enigma2/MB-FHD-Common/fonts/youvix-r.ttf" scale="100" />
+		<font name="youvix-b" filename="/usr/share/enigma2/MB-FHD-Common/fonts/youvix-b.ttf" scale="100" />
+		<font name="youvix-r" filename="/usr/share/enigma2/MB-FHD-Common/fonts/youvix-r.ttf" scale="100" />
+		<font name="youvix-l" filename="/usr/share/enigma2/MB-FHD-Common/fonts/youvix-l.ttf" scale="100" />
+		<font name="Subtitlefont" filename="/usr/share/enigma2/MB-FHD-Common/fonts/youvix-r.ttf" scale="100" />
 		<alias name="Body" font="youvix-r" size="32" height="50" />
 		<alias name="TextNormal" font="youvix-r" size="32" height="50" />
 		<alias name="ChoiceList" font="youvix-r" size="32" height="50" />

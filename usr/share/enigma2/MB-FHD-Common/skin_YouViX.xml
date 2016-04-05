@@ -68,7 +68,7 @@
 		<panel name="InfobarTunerStatus"/>
 	</screen>
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="fill" backgroundColor="transparent">
-		<ePixmap pixmap="YouViX-Common/infobar/2ndinfobar.png" position="0,570" size="1920,305" zPosition="-1"/>
+		<ePixmap pixmap="MB-FHD-Common/infobar/2ndinfobar.png" position="0,570" size="1920,305" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Label" position="45,675" size="475,0" font="youvix-r;24" foregroundColor="white" backgroundColor="background2" halign="left" valign="top" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
@@ -105,7 +105,7 @@
 		<widget source="session.Event_Next" render="Label" position="1230,633" size="670,213" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<ePixmap pixmap="YouViX-Common/infobar/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
+		<ePixmap pixmap="MB-FHD-Common/infobar/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
 		<panel name="InfobarClock"/>
 		<panel name="InfoBar"/>
 	</screen>
@@ -115,7 +115,7 @@
 
 	<!-- ## EPG SCREENS ## -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="fill" title="InfoBar" backgroundColor="transparent">
-		<ePixmap pixmap="YouViX-Common/infobar/quickepg.png" position="0,870" size="1920,215" zPosition="-1"/>
+		<ePixmap pixmap="MB-FHD-Common/infobar/quickepg.png" position="0,870" size="1920,215" zPosition="-1"/>
 		<panel name="InfobarClock"/>
 		<panel name="InfobarUpArrow"/>
 		<panel name="InfobarLeftArrow"/>		
@@ -143,7 +143,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1552,748" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1723,753" size="30,30" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1723,753" size="30,30" pixmap="MB-FHD-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1765,748" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -270,7 +270,7 @@
 		<widget source="Event" render="Label" position="915,792" size="575,35" zPosition="1" font="youvix-r;28" foregroundColor="lightcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="YouViX-Common/icons/info.png" position="1750,791" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="MB-FHD-Common/icons/info.png" position="1750,791" size="35,35" alphatest="blend" transparent="1" />
 		<ePixmap position="950,850" size="600,10" pixmap="selectionbars/activitysliderbackground.png" alphatest="blend" zPosition="1"/>
 		<widget source="Event" render="Progress" position="950,850" size="600,10" pixmap="selectionbars/activityslider.png" backgroundColor="menubackground" transparent="1" alphatest="blend" zPosition="2">
 			<convert type="EventTime">Progress</convert>
@@ -290,7 +290,7 @@
 		<panel name="MenuButtonBlue" />
 	</screen>
 	<screen name="GraphicalEPGPIG" position="fill" flags="wfNoBorder" backgroundColor="transparent" >
-		<ePixmap pixmap="YouViX-Common/screens/menu_background.png" position="0,0" size="1920,1080" zPosition="-1"/>
+		<ePixmap pixmap="MB-FHD-Common/screens/menu_background.png" position="0,0" size="1920,1080" zPosition="-1"/>
 		<eLabel text="MyGuide" position="60,50" size="150,38" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<eLabel text=">" font="youvix-r;32" position="60,83" size="35,38" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1"/>
 		<widget source="Title" render="Label" position="90,85" size="840,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" />
@@ -308,7 +308,7 @@
 		<widget source="Event" render="Label" position="280,150" size="475,35" font="youvix-r;26" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="YouViX-Common/icons/info.png" position="770,149" size="35,35" alphatest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="MB-FHD-Common/icons/info.png" position="770,149" size="35,35" alphatest="blend" transparent="1" zPosition="2" />
 		<widget source="Event" render="Label" position="825,150" font="youvix-r;24" size="120,35" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" >
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
@@ -320,7 +320,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1567,330" zPosition="1" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1735,332" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1735,332" size="24,24" pixmap="MB-FHD-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1775,330" zPosition="1" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -1561,8 +1561,8 @@
 		<widget name="castlabel" position="685,247" size="1160,340" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" />
 		<widget name="extralabel" position="685,247" size="1160,340" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" />	
 		<widget name="detailslabel" position="685,247" size="1160,340" font="youvix-r;24" itemHeight="50" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
-		<widget name="starsbg" pixmap="YouViX-Common/imdb/starsbar_empty.png" position="1100,750" size="315,32" backgroundColor="menubackground" transparent="1" alphatest="blend" zPosition="0" />
-		<widget name="stars" pixmap="YouViX-Common/imdb/starsbar_filled.png" position="1100,750" size="315,32" backgroundColor="menubackground" transparent="1" alphatest="blend" />
+		<widget name="starsbg" pixmap="MB-FHD-Common/imdb/starsbar_empty.png" position="1100,750" size="315,32" backgroundColor="menubackground" transparent="1" alphatest="blend" zPosition="0" />
+		<widget name="stars" pixmap="MB-FHD-Common/imdb/starsbar_filled.png" position="1100,750" size="315,32" backgroundColor="menubackground" transparent="1" alphatest="blend" />
 		<widget name="ratinglabel" position="1120,790" size="260,32" halign="center" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" />
 		<widget name="poster" position="1550,630" size="204,260" alphatest="blend" />
 		<panel name="MenuButtonRed" />
@@ -1676,7 +1676,7 @@
 
 	<!-- ## Job View ## -->
 	<screen name="JobView" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="YouViX-Common/screens/crossepgdownloadbox.png" position="center,965" size="800,115" zPosition="-1"/>
+		<ePixmap pixmap="MB-FHD-Common/screens/crossepgdownloadbox.png" position="center,965" size="800,115" zPosition="-1"/>
 		<widget source="job_name" render="Label" position="center,975" size="520,30" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
 		<widget source="job_status" render="Label" position="1020,970" size="320,30" font="youvix-r;20" foregroundColor="white" backgroundColor="menubackground" halign="right" valign="center" transparent="1" />
 		<widget source="job_task" render="Label" position="center,1010" size="520,30" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
@@ -1924,15 +1924,15 @@
 
 	<!-- ## Movie Bar ## -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="fill" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="center,905" size="1517,156" pixmap="YouViX-Common/infobar/moviebar.png" zPosition="-1" />
-		<ePixmap position="275,915" size="35,35" pixmap="YouViX-Common/icons/info.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="center,905" size="1517,156" pixmap="MB-FHD-Common/infobar/moviebar.png" zPosition="-1" />
+		<ePixmap position="275,915" size="35,35" pixmap="MB-FHD-Common/icons/info.png" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" position="325,915" size="650,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="1">
 			<convert type="ServiceName">Name :</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1372,920" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1538,926" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1538,926" size="24,24" pixmap="MB-FHD-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1575,920" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -1944,7 +1944,7 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="276,987" size="1367,20" zPosition="2" pointer="infobar/movieprogressbar.png:1367,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget name="statusicon" position="276,1019" size="25,25" pixmaps="YouViX-Common/pvr/play.png,YouViX-Common/pvr/pause.png,YouViX-Common/pvr/stop.png,YouViX-Common/pvr/forward.png,YouViX-Common/pvr/backward.png,YouViX-Common/pvr/slow.png,YouViX-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
+		<widget name="statusicon" position="276,1019" size="25,25" pixmaps="MB-FHD-Common/pvr/play.png,MB-FHD-Common/pvr/pause.png,MB-FHD-Common/pvr/stop.png,MB-FHD-Common/pvr/forward.png,MB-FHD-Common/pvr/backward.png,MB-FHD-Common/pvr/slow.png,MB-FHD-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
 		<widget name="speed" position="310,1019" size="100,38" font="youvix-r;22" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" zPosition="4" />
 		<widget source="session.CurrentService" render="Label" position="1362,1010" size="130,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="right" valign="center">
 			<convert type="ServicePosition">Position</convert>
@@ -1965,7 +1965,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>		
 		<widget name="speed" position="620,938" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="lightcolour" transparent="1" halign="right" zPosition="1" />
-		<widget name="statusicon" position="788,940" size="25,25" pixmaps="YouViX-Common/pvr/play.png,YouViX-Common/pvr/pause.png,YouViX-Common/pvr/stop.png,YouViX-Common/pvr/forward.png,YouViX-Common/pvr/backward.png,YouViX-Common/pvr/slow.png,YouViX-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
+		<widget name="statusicon" position="788,940" size="25,25" pixmaps="MB-FHD-Common/pvr/play.png,MB-FHD-Common/pvr/pause.png,MB-FHD-Common/pvr/stop.png,MB-FHD-Common/pvr/forward.png,MB-FHD-Common/pvr/backward.png,MB-FHD-Common/pvr/slow.png,MB-FHD-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
 		<panel name="InfobarRecIcon"/>
 		<panel name="InfobarInfoIcon"/>
 		<panel name="InfobarOnNowIcon"/>
@@ -2037,7 +2037,7 @@
 
 	<!-- ## Mute ## -->
 	<screen name="Mute" position="1600,50" size="147,132" flags="wfNoBorder" backgroundColor="transparent" title="Mute" zPosition="10">
-		<ePixmap position="0,0" size="147,132" pixmap="YouViX-Common/icons/mute.png" transparent="1" alphatest="blend" />
+		<ePixmap position="0,0" size="147,132" pixmap="MB-FHD-Common/icons/mute.png" transparent="1" alphatest="blend" />
 	</screen>
 
 	<!-- ## NETWORK ## -->
@@ -2471,7 +2471,7 @@
 
 	<!-- ## Number Zap ## -->
 	<screen name="NumberZap" position="center,center" size="244,328" backgroundColor="transparent" flags="wfNoBorder">
-	    <ePixmap pixmap="YouViX-Common/screens/zapbox.png" position="0,0" size="244,328" alphatest="blend" zPosition="-1" />
+	    <ePixmap pixmap="MB-FHD-Common/screens/zapbox.png" position="0,0" size="244,328" alphatest="blend" zPosition="-1" />
 		<widget name="number" position="center,70" size="244,100" font="youvix-r;90" foregroundColor="white" backgroundColor="background2" borderColor="menubackground" valign="center" halign="center" transparent="1" borderWidth="2" />
 		<widget name="servicename" position="center,275" size="244,45" font="youvix-r;22" foregroundColor="white" backgroundColor="background2" borderColor="menubackground" valign="center" halign="center" transparent="1" borderWidth="2" />
 	</screen>
@@ -2762,10 +2762,10 @@
 		<panel name="MenuMySetupText" />
 		<widget name="balken" position="0,0" zPosition="-1" size="560,35" backgroundColor="#4e5a74" transparent="0" />
 		<panel name="MenuConfigWidget" />
-		<widget name="pic_red" pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
-		<widget name="pic_green" pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
-		<widget name="pic_yellow" pixmap="YouViX-Common/buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
-		<widget name="pic_blue" pixmap="YouViX-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_red" pixmap="MB-FHD-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_green" pixmap="MB-FHD-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_yellow" pixmap="MB-FHD-Common/buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_blue" pixmap="MB-FHD-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 		<widget name="key_green" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 		<widget name="key_yellow" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
@@ -2963,7 +2963,7 @@
 
 	<!-- ## Sat Dish ## -->
 	<screen name="Dish" flags="wfNoBorder" position="0,0" size="400,400" backgroundColor="transparent" zPosition="-1">
-		<widget name="Dishpixmap" position="35,35" size="195,240" zPosition="1" pixmap="YouViX-Common/icons/dish.png" transparent="1" alphatest="blend" />
+		<widget name="Dishpixmap" position="35,35" size="195,240" zPosition="1" pixmap="MB-FHD-Common/icons/dish.png" transparent="1" alphatest="blend" />
 		<widget name="turnTime" position="105,205" size="120,38" zPosition="1" font="youvix-r;22" halign="left" valign="center" borderWidth="1" borderColor="menubackground" foregroundColor="lightcolour" backgroundColor="menubackground" transparent="1" />
 		<widget name="From" position="50,235" size="80,38" zPosition="1" font="youvix-r;22" halign="right" valign="center" borderWidth="1" borderColor="menubackground" foregroundColor="white" backgroundColor="menubackground" transparent="1" />
 		<widget name="posFrom" position="132,235" size="105,38" zPosition="1" font="youvix-r;22" halign="left" valign="center" borderWidth="1" borderColor="menubackground" foregroundColor="white" backgroundColor="menubackground" transparent="1" />
@@ -2977,7 +2977,7 @@
 		</widget>
 	</screen>
 	<screen name="Dishpip" flags="wfNoBorder" position="0,0" size="400,400" backgroundColor="transparent" zPosition="-1" title="DishPiP">
-		<widget source="Dishpixmap" render="Pixmap" position="35,35" size="195,240" zPosition="1" pixmap="YouViX-Common/icons/dish.png" transparent="1" alphatest="blend">
+		<widget source="Dishpixmap" render="Pixmap" position="35,35" size="195,240" zPosition="1" pixmap="MB-FHD-Common/icons/dish.png" transparent="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget name="turnTime" position="105,205" size="120,38" zPosition="1" font="youvix-r;22" halign="left" valign="center" borderWidth="1" borderColor="menubackground" foregroundColor="lightcolour" backgroundColor="menubackground" transparent="1" />
@@ -3061,7 +3061,7 @@
 		<panel name="InfoPanel" />
 		<panel name="MenuMySoftcamsText" />
 		<widget name="lab1" position="680,300" size="1160,80" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
-		<widget name="connect" position="1210,420" size="100,100" pixmaps="YouViX-Common/spinner/wait1.png,YouViX-Common/spinner/wait2.png,YouViX-Common/spinner/wait3.png,YouViX-Common/spinner/wait4.png,YouViX-Common/spinner/wait5.png,YouViX-Common/spinner/wait6.png,YouViX-Common/spinner/wait7.png,YouViX-Common/spinner/wait8.png,YouViX-Common/spinner/wait9.png,YouViX-Common/spinner/wait9.png,YouViX-Common/spinner/wait10.png,YouViX-Common/spinner/wait11.png,YouViX-Common/spinner/wait12.png,YouViX-Common/spinner/wait13.png,YouViX-Common/spinner/wait14.png,YouViX-Common/spinner/wait15.png,YouViX-Common/spinner/wait17.png,YouViX-Common/spinner/wait18.png" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="connect" position="1210,420" size="100,100" pixmaps="MB-FHD-Common/spinner/wait1.png,MB-FHD-Common/spinner/wait2.png,MB-FHD-Common/spinner/wait3.png,MB-FHD-Common/spinner/wait4.png,MB-FHD-Common/spinner/wait5.png,MB-FHD-Common/spinner/wait6.png,MB-FHD-Common/spinner/wait7.png,MB-FHD-Common/spinner/wait8.png,MB-FHD-Common/spinner/wait9.png,MB-FHD-Common/spinner/wait9.png,MB-FHD-Common/spinner/wait10.png,MB-FHD-Common/spinner/wait11.png,MB-FHD-Common/spinner/wait12.png,MB-FHD-Common/spinner/wait13.png,MB-FHD-Common/spinner/wait14.png,MB-FHD-Common/spinner/wait15.png,MB-FHD-Common/spinner/wait17.png,MB-FHD-Common/spinner/wait18.png" transparent="1" alphatest="blend" zPosition="2" />
 	</screen>
 	<screen name="VIXStartCam" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="VIXAutoStartCam" />
@@ -3112,7 +3112,7 @@
 	<screen name="Satfinder" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
-		<ePixmap pixmap="YouViX-Common/icons/dish_scan.png" position="980,238" size="179,165" transparent="1" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="MB-FHD-Common/icons/dish_scan.png" position="980,238" size="179,165" transparent="1" alphatest="blend" zPosition="1" />
 		<widget source="Frontend" render="Label" position="1255,227" size="250,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="1" >
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
@@ -3260,10 +3260,10 @@
 
 	<!-- ## Timeshift ## -->
 	<screen name="TimeshiftState" position="center,center" size="850,350" flags="wfNoBorder" backgroundColor="transparent" title="InfoBar">
-		<ePixmap pixmap="YouViX-Common/screens/zapbox.png" position="center,10" size="244,260" alphatest="blend" zPosition="-1" />
-		<widget name="statusicon" position="340,30" size="244,153" pixmaps="YouViX-Common/pvr/play_large.png,YouViX-Common/pvr/pause_large.png,YouViX-Common/pvr/stop_large.png,YouViX-Common/pvr/forward_large.png,YouViX-Common/pvr/backward_large.png,YouViX-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="MB-FHD-Common/screens/zapbox.png" position="center,10" size="244,260" alphatest="blend" zPosition="-1" />
+		<widget name="statusicon" position="340,30" size="244,153" pixmaps="MB-FHD-Common/pvr/play_large.png,MB-FHD-Common/pvr/pause_large.png,MB-FHD-Common/pvr/stop_large.png,MB-FHD-Common/pvr/forward_large.png,MB-FHD-Common/pvr/backward_large.png,MB-FHD-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="center,210" size="130,40" font="youvix-r;32" foregroundColor="white" backgroundColor="background2" transparent="1" halign="center" valign="center" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/screens/seekbox.png" position="center,275" size="800,70" alphatest="blend" zPosition="-1" />
+		<ePixmap pixmap="MB-FHD-Common/screens/seekbox.png" position="center,275" size="800,70" alphatest="blend" zPosition="-1" />
 		<widget source="session.CurrentService" render="Label" position="35,280" size="120,40" font="youvix-r;24" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="left" zPosition="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -3278,8 +3278,8 @@
 		</widget>	
 	</screen>
 	<screen name="PVRState" position="center,center" size="244,328" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="2">
-		<ePixmap pixmap="YouViX-Common/screens/zapbox.png" position="0,0" size="244,253" alphatest="blend" zPosition="-1" />
-		<widget name="statusicon" position="45,30" size="244,153" pixmaps="YouViX-Common/pvr/play_large.png,YouViX-Common/pvr/pause_large.png,YouViX-Common/pvr/stop_large.png,YouViX-Common/pvr/forward_large.png,YouViX-Common/pvr/backward_large.png,YouViX-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="MB-FHD-Common/screens/zapbox.png" position="0,0" size="244,253" alphatest="blend" zPosition="-1" />
+		<widget name="statusicon" position="45,30" size="244,153" pixmaps="MB-FHD-Common/pvr/play_large.png,MB-FHD-Common/pvr/pause_large.png,MB-FHD-Common/pvr/stop_large.png,MB-FHD-Common/pvr/forward_large.png,MB-FHD-Common/pvr/backward_large.png,MB-FHD-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="center,210" size="130,40" font="youvix-r;32" foregroundColor="white" backgroundColor="background2" transparent="1" halign="center" valign="center" zPosition="4" />
 	</screen>
 
@@ -3453,7 +3453,7 @@
 
 	<!-- ## Unhandled Key ## -->
 	<screen name="UnhandledKey" position="1730,30" size="147,132" flags="wfNoBorder" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" position="0,0" size="147,132" pixmap="YouViX-Common/icons/unhandled-key.png" alphatest="blend" backgroundColor="transparent" />
+		<widget name="UnhandledKeyPixmap" position="0,0" size="147,132" pixmap="MB-FHD-Common/icons/unhandled-key.png" alphatest="blend" backgroundColor="transparent" />
 	</screen>
 
 	<!-- ## User Dialog ## -->
@@ -3573,8 +3573,8 @@
 
 	<!-- ## Volume # -->
 	<screen name="Volume" position="center,20" size="480,102" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="10">
-		<ePixmap pixmap="YouViX-Common/screens/volume_background.png" position="0,0" size="480,102" alphatest="on" />
-		<widget name="Volume" pixmap="YouViX-Common/screens/volume_up.png" position="100,42" size="293,20" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="MB-FHD-Common/screens/volume_background.png" position="0,0" size="480,102" alphatest="on" />
+		<widget name="Volume" pixmap="MB-FHD-Common/screens/volume_up.png" position="100,42" size="293,20" alphatest="blend" transparent="1" zPosition="1" />
 		<widget render="VolumeText" source="global.CurrentTime" font="youvix-r;24" position="410,37" size="45,25" foregroundColor="white" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="101" />
 	</screen>
 
