@@ -734,13 +734,13 @@
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
 	</screen>
 	<screen name="WizardDescriptionWidget">
-		<widget name="text" position="680,165" size="1160,250" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="1" />
+		<widget name="text" position="680,165" size="1160,350" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="1" />
 	</screen>
 	<screen name="WizardConfigWidget">
-		<widget name="config" position="680,415" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="config" position="680,485" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
 	<screen name="WizardStringList">
-		<widget source="list" render="Listbox" position="680,415" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="680,485" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,5),size=(1160,50),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("Regular",30) ],"itemHeight":50}
