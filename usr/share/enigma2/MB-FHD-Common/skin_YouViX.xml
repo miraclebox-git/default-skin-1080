@@ -49,7 +49,7 @@
 		<ePixmap pixmap="infobar/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
 		<panel name="InfobarClock"/>
 		<panel name="InfobarUpArrow"/>
-		<panel name="InfobarLeftArrow"/>
+		<!--<panel name="InfobarLeftArrow"/>-->
 		<panel name="InfobarChannelName"/>
 		<panel name="InfobarProgramNowStartTime"/>
 		<panel name="InfobarProgramNowName"/>
@@ -96,13 +96,13 @@
 		<widget source="session.Event_Now" render="Label" position="500,585" size="670,40" font="youvix-b;34" foregroundColor="lightcolour" backgroundColor="background2" transparent="1" halign="left" valign="center" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="500,633" size="670,213" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" valign="top" zPosition="1">
+		<widget source="session.Event_Now" render="RunningText" position="500,633" size="670,213" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=100,wrap" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="1230,585" size="670,40" font="youvix-b;34" foregroundColor="lightcolour" backgroundColor="background2" transparent="1" halign="left" valign="center" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="1230,633" size="670,213" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" valign="top" zPosition="1">
+		<widget source="session.Event_Next" render="RunningText" position="1230,633" size="670,213" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=100,wrap" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<ePixmap pixmap="MB-FHD-Common/infobar/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>

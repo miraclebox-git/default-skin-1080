@@ -163,7 +163,7 @@
 		</widget>
 	</screen>
 	<screen name="InfobarPicon">
-		<widget source="session.CurrentService" render="Picon" position="1720,926" size="155,97" transparent="0" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" render="Picon" position="35,926" size="155,97" transparent="0" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
