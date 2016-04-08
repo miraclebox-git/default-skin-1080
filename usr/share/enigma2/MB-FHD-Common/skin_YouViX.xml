@@ -60,7 +60,7 @@
 		<panel name="InfobarOnNowIcon"/>
 		<panel name="InfobarStatusIcons"/>
 		<panel name="InfobarPicon"/>
-		<panel name="InfobarRightArrow"/>
+		<!--<panel name="InfobarRightArrow"/>-->
 		<panel name="InfobarDownArrow"/>
 		<panel name="InfobarProgramNextStartTime"/>
 		<panel name="InfobarProgramNextName"/>
