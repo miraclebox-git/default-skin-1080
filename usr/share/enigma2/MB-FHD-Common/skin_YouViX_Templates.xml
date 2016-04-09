@@ -354,10 +354,10 @@
 		<panel name="BottomMenuBlock" />
 		<panel name="MenuForwardArrow" />
 		<panel name="MenuTitle" />
-		<panel name="MenuUpArrow" />
+		<!--<panel name="MenuUpArrow" />
 		<panel name="MenuLeftArrow" />
 		<panel name="MenuRightArrow" />
-		<panel name="MenuDownArrow" />
+		<panel name="MenuDownArrow" />-->
 	</screen>
 	<screen name="BigMenuPanel">
 	    <panel name="MenuClock" />

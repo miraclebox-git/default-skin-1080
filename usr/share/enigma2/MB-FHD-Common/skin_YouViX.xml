@@ -13,8 +13,8 @@
 		<panel name="MenuMyMenuText" />
 		<widget source="menu" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700.png" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (70,0), size = (465,50), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0 ) ],
-				"fonts": [gFont("youvix-r",32)],
+				{"template": [ MultiContentEntryText(pos = (70,0), size = (465,50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
+				"fonts": [gFont("youvix-r",37)],
 				"itemHeight":50
 				}
 			</convert>
@@ -4087,7 +4087,7 @@
 		<panel name="MenuButtonGreen" />
 		<panel name="MenuButtonBlue" />
 		
-		<widget name="list" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="list" position="680,165" size="1160,750" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/fanart.png" position="110,170" size="550,256" transparent="1" alphatest="blend"/>
 		<widget name="aired" position="110,470" size="550,35" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
 		<widget name="duration" position="110,510" size="550,35" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
