@@ -11,9 +11,9 @@
 	<screen name="Menu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuMyMenuText" />
-		<widget source="menu" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700.png" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+		<widget source="menu" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/MenuSelectionBar_H50x590-mb.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (70,0), size = (465,50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
+				{"template": [ MultiContentEntryText(pos = (30,0), size = (495,50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
 				"fonts": [gFont("youvix-r",37)],
 				"itemHeight":50
 				}
@@ -3940,7 +3940,7 @@
 	<screen name="DeliteSettings" position="fill" flags="wfNoBorder" title="Open Black Hole Extras Panel" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuMyOBHAppsPanelText" />
-		<widget source="list" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700.png" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+		<widget source="list" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/MenuSelectionBar_H50x590-mb.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (70,0), size = (465,50), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0 ) ],
 				"fonts": [gFont("youvix-r",32)],
