@@ -4081,13 +4081,23 @@
 		</widget>
 	</screen>
 	<screen name="SVTPlayMainMenu" position="fill" title="SVTPlay" flags="wfNoBorder" >
-		<panel name="BigMenuPanel" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonYellow" />
 		<panel name="MenuButtonGreen" />
 		<panel name="MenuButtonBlue" />
 		
-		<widget name="list" position="680,165" size="1160,750" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="categoryTitle" position="680,165" size="1160,30" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
+		<widget name="list" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/fanart.png" position="110,170" size="550,256" transparent="1" alphatest="blend"/>
 		<widget name="aired" position="110,470" size="550,35" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
 		<widget name="duration" position="110,510" size="550,35" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
