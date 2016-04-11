@@ -335,9 +335,9 @@
 	
 	<!-- MENU TEMPLATES -->
 	<screen name="InfoPanel">
-	    <panel name="MenuClock" />
-	    <panel name="TopMenuBlock" />
-	    <panel name="LeftMenuBlock" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
 		<panel name="CenterMenuBlock" />
 		<panel name="BigRightMenuBlock" />
 		<panel name="FarRightMenuBlock" />
@@ -346,13 +346,13 @@
 		<panel name="MenuTitle" />
 	</screen>
 	<screen name="MenuPanel">
-	    <panel name="MenuClock" />
-	    <panel name="TopMenuBlock" />
-	    <panel name="LeftMenuBlock" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
 		<panel name="CenterMenuBlock" />
 		<panel name="RightMenuBlock" />
 		<panel name="BottomMenuBlock" />
-		<panel name="MenuForwardArrow" />
+		<!--<panel name="MenuForwardArrow" />-->
 		<panel name="MenuTitle" />
 		<!--<panel name="MenuUpArrow" />
 		<panel name="MenuLeftArrow" />
@@ -360,19 +360,19 @@
 		<panel name="MenuDownArrow" />-->
 	</screen>
 	<screen name="BigMenuPanel">
-	    <panel name="MenuClock" />
-	    <panel name="TopMenuBlock" />
-	    <panel name="LeftMenuBlock" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
 		<panel name="CenterMenuBlock" />
 		<panel name="BigRightMenuBlock" />
 		<panel name="FarRightMenuBlock" />
 		<panel name="BottomMenuBlock" />
-		<panel name="MenuForwardArrow" />
+		<!--<panel name="MenuForwardArrow" />-->
 		<panel name="MenuTitle" />
-		<panel name="MenuUpArrow" />
+		<!--<panel name="MenuUpArrow" />
 		<panel name="MenuLeftArrow" />
 		<panel name="FarRightMenuRightArrow" />
-		<panel name="MenuDownArrow" />
+		<panel name="MenuDownArrow" />-->
 	</screen>
 	<screen name="MenuClock">
 	    <eLabel position="1600,0" size="310,50" backgroundColor="menubackground" zPosition="-1" />
@@ -722,16 +722,16 @@
 		<widget name="rc" pixmaps="rc.png,rcold.png" position="310,220" size="158,620" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="WizardRemoteArrowDown">
-		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+		<!--<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />-->
 	</screen>
 	<screen name="WizardRemoteArrowDown2">
-		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+		 <!--<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />-->
 	</screen>
 	<screen name="WizardRemoteArrowUp">
-		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+		 <!--<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />-->
 	</screen>
 	<screen name="WizardRemoteArrowUp2">
-		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+		 <!--<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />-->
 	</screen>
 	<screen name="WizardDescriptionWidget">
 		<widget name="text" position="680,165" size="1160,350" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="1" />
