@@ -4106,4 +4106,24 @@
 		<widget name="loadingPixmap" position="1600,980" size="70,70" zPosition="10" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_1.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_2.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_3.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_4.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_5.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_6.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_7.png,/usr/lib/enigma2/python/Plugins/Extensions/SVTPlay/icons/buffering/buffering_8.png" transparent="1" alphatest="blend" />
 		<widget name="loadingText" position="1700,1000" size="260,35" zPosition="10" font="Regular;30" transparent="1" />
 	</screen>
+	<screen name="OTTMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="FarRightMenuRightArrow" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuTitle" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuFootnoteWidget" />
+		<panel name="MenuTextButtonVkey" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuHelpwindowWidget" />
+		<panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
+	</screen>
 </skin>
