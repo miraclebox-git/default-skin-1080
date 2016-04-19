@@ -4126,4 +4126,158 @@
 		<panel name="MenuButtonYellow" />
 		<panel name="MenuButtonBlue" />
 	</screen>
+	
+	<screen name="MBMainMenu" title="MB Panel" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+	  	<panel name="MenuPanel" />
+		<panel name="MenuMyMenuText" />
+		<widget source="list" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ 
+				MultiContentEntryText(pos = (110,0), size = (495,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ), 
+				MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (90, 90), png = 1),
+				MultiContentEntryText(pos = (110, 55), size = (510, 35), font=1, flags = RT_VALIGN_TOP, text = 3),
+				],
+				"fonts": [gFont("youvix-r",37),gFont("Regular", 26)],
+				"itemHeight":90
+				}
+			</convert>
+		</widget>
+	 </screen>
+	<screen name="MBTools" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuMyMenuText" />
+		<widget source="list" render="Listbox" position="80,165" size="590,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ 
+				MultiContentEntryText(pos = (110,0), size = (495,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ), 
+				MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (90, 90), png = 1),
+				MultiContentEntryText(pos = (110, 50), size = (510, 35), font=1, flags = RT_VALIGN_TOP, text = 3),
+				],
+				"fonts": [gFont("youvix-r",37),gFont("Regular", 26)],
+				"itemHeight":90
+				}
+			</convert> 
+		</widget>
+	</screen>
+
+	<screen name="MBPanelAddons" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuMyMenuText" />
+		<widget source="list" render="Listbox" position="80,165" size="600,750" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ 
+				MultiContentEntryText(pos = (100,0), size = (595,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ), 
+				MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (90, 90), png = 1),
+				MultiContentEntryText(pos = (100, 50), size = (510, 35), font=1, flags = RT_VALIGN_TOP, text = 3),
+				],
+				"fonts": [gFont("youvix-r",37),gFont("Regular", 26)],
+				"itemHeight":90
+				}
+			</convert> 
+		</widget>
+	</screen>
+
+	<screen name="MBSoftCam" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="lab2" position="35,123" size="190,35" zPosition="1" font="Regular;35" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="list" position="110,187" size="500,45" zPosition="1" halign="center" itemHeight="45" font="Regular;35" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="lab1" position="107,232" size="230,35" zPosition="1" font="Regular;30" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="lab3" position="35,276" size="220,35" zPosition="1" font="Regular;35" foregroundColor="#00AEFF" backgroundColor="window-bg" transparent="1"/>
+		<widget name="activecam" position="240,276" size="300,35" font="Regular;33" halign="left" zPosition="1" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="Ilab1" position="35,320" size="520,35" font="Regular;30" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="Ilab2" position="35,360" size="520,35" font="Regular;30" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="Ilab3" position="35,400" size="520,35" font="Regular;30" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="Ilab4" position="35,440" size="520,35" font="Regular;30" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<widget name="Ecmtext" position="35,480" size="530,420" font="Regular;28" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1"/>
+		<panel name="MenuPanel" />
+		<panel name="MenuMyMenuText" />
+		<panel name="MenuTitle" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
+	</screen>
+
+	<screen name="DownloadSoftCams" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="countrymenu" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<panel name="MenuMyMenuText" />
+		<panel name="MenuButtonRed" />
+	</screen>
+
+	<screen name="FullBackup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuTitle" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuFootnoteWidget" />
+		<panel name="MenuTextButtonVkey" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<widget name="label1" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+	</screen> 
+	
+	<screen name="ChangePasswdScreen" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="passwd" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuTitle" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+	</screen>
+
+	<screen name="Nab_uninstPanel" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget source="list" render="Listbox" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" >
+			<convert type="StringList" />
+		</widget>
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuTitle" />
+	</screen>
+
+	<screen name="FilebrowserScreen" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="list_left" position="680,215" size="570,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="list_right" position="1270,215" size="570,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuTitle" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="red" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="green" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+		<widget name="yellow" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="blue" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
+	</screen>
 </skin>
