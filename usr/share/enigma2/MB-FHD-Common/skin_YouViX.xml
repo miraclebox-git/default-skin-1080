@@ -4280,4 +4280,105 @@
 		<widget name="blue" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
 		<ePixmap pixmap="buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
 	</screen>
+	<screen name="SoftwarePanel" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="packagetext" position="80,120" size="350,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+		<widget name="packagenr" position="351,120" size="50,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+		<widget source="list" render="Listbox" position="10,180" size="630,365" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular", 32),gFont("Regular", 24)],
+				"itemHeight": 72
+				}
+			</convert>
+		</widget>
+		<panel name="MenuPanel" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<panel name="MenuMyMenuText" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+	</screen>
+	<screen name="PluginManager" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<widget source="status" render="Label" position="10,140" zPosition="10" size="540,30" halign="center" valign="center" font="Regular;26" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="list" render="Listbox" position="10,200" size="630,665" scrollbarMode="showOnDemand" >
+				<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (71,[
+							MultiContentEntryText(pos = (0, 1), size = (490, 34), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (0, 34), size = (490, 34), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (575, 0), size = (48, 48), png = 5), # index 5 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (0, 70), size = (550, 2), png = 6), # index 6 is the div pixmap
+						]),
+					"category": (61,[
+							MultiContentEntryText(pos = (30, 0), size = (500, 32), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (30, 28), size = (550, 26), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (0, 60), size = (650, 2), png = 3), # index 3 is the div pixmap
+						])
+					},
+					"fonts": [gFont("Regular", 32),gFont("Regular", 30),gFont("Regular", 26)],
+					"itemHeight": 80
+				}
+				</convert>
+			</widget>
+		<panel name="MenuPanel" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<panel name="MenuMyMenuText" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	<screen name="UpdatePluginMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuMyMenuText" />
+		<widget source="menu" render="Listbox" position="680,215" size="1160,705" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ 
+				MultiContentEntryText(pos = (20,0), size = (595,70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ), 
+				],
+				"fonts": [gFont("youvix-r",37),gFont("Regular", 26)],
+				"itemHeight":70
+				}
+			</convert> 
+		</widget>
+		<widget source="status" render="Label" position="95,360" zPosition="10" size="300,150" halign="center" valign="center" font="Regular;32" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<panel name="MenuMyMenuText" />
+		<panel name="MenuButtonRedSource" />
+	</screen>
+	
+	<screen name="SoftwareManagerSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="Setup" />
+	</screen>
 </skin>
