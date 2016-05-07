@@ -4283,7 +4283,7 @@
 	<screen name="SoftwarePanel" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="packagetext" position="80,120" size="350,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
 		<widget name="packagenr" position="351,120" size="50,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
-		<widget source="list" render="Listbox" position="10,180" size="630,365" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="10,180" size="630,365" scrollbarMode="showOnDemand" backgroundColor="menubackground">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -4313,7 +4313,7 @@
 		<panel name="MenuButtonGreenSource" />
 	</screen>
 	<screen name="PluginManager" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="status" render="Label" position="10,140" zPosition="10" size="540,30" halign="center" valign="center" font="Regular;26" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="status" render="Label" position="10,140" zPosition="10" size="540,30" halign="center" valign="center" font="Regular;26" transparent="1" backgroundColor="menubackground" />
 		<widget source="list" render="Listbox" position="10,200" size="630,665" scrollbarMode="showOnDemand" >
 				<convert type="TemplatedMultiContent">
 				{"templates":
@@ -4352,7 +4352,7 @@
 	<screen name="UpdatePluginMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuMyMenuText" />
-		<widget source="menu" render="Listbox" position="680,215" size="1160,705" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+		<widget source="menu" render="Listbox" position="680,215" size="1160,705" backgroundPixmap="selectionbars/MenuSelectionBarBackground_H50x700-mb.png" selectionPixmap="selectionbars/SelectionBar_H90x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ 
 				MultiContentEntryText(pos = (20,0), size = (595,70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ), 
