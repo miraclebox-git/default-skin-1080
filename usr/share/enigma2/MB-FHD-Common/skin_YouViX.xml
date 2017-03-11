@@ -4381,4 +4381,71 @@
 	<screen name="SoftwareManagerSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Setup" />
 	</screen>
+
+	<screen name="IPTVPlayerWidget" position="fill" title="SVTPlay" flags="wfNoBorder" >
+		<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonBlueSource" />
+		<widget name="headertext" position="680,165" size="1160,30" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
+		<widget name="list" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="cover" position="110,170" size="550,256" transparent="1" alphatest="blend" zPosition="3"/>
+		<widget name="statustext" position="1450,980" size="200,35" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
+		<widget name="spinner" position="1600,980" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_1" position="1615,980" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_2" position="1630,980" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_3" position="1645,980" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_4" position="1660,980" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="console" position="110,550" size="550,426" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
+		<widget name="playerlogo" position="960,35" size="251,83" alphatest="blend" transparent="1" zPosition="4" />		
+	</screen>
+	
+	<screen name="IPTVSetupMainWidget" position="100, 960" size="1820,92" flags="wfNoBorder" >
+		<widget name="info_field"   position="10,10" size="1800,92" font="Regular;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
+		<widget name="spinner" position="10,10" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+	</screen>
+	
+	<screen name="ConfigMenu"  position="fill" title="IPTV Config" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="Setup" />
+	</screen>
+	
+	<screen name="ConfigHostsMenu"  position="fill" title="IPTV Config" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="Setup" />
+	</screen>
+	
+	<screen name="IPTVConfigBaseWidget" position="fill" title="IPTV Config" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="nRGYB"/>
+		<widget name="config"    position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<widget name="key_ok"    position="70,880" size="600,35" valign="center" halign="center" font="Regular;28" transparent="1" foregroundColor="white" zPosition="2" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend"/>
+	</screen>
+	
+	<screen name="IPTVUpdateWindow" position="fill" title="Update Main" flags="wfNoBorder" >
+	  	<panel name="MenuClock" />
+		<panel name="TopMenuBlock" />
+		<panel name="LeftMenuBlock" />
+		<panel name="CenterMenuBlock" />
+		<panel name="BigRightMenuBlock" />
+		<panel name="FarRightMenuBlock" />
+		<panel name="BottomMenuBlock" />
+		<panel name="MenuForwardArrow" />
+		<panel name="MenuTitle" />
+		<widget name="sub_title" position="680,165" size="1160,30" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
+		<widget name="list" position="680,215" size="1160,705" font="youvix-r;30" itemHeight="70" selectionPixmap="selectionbars/SelectionBar_H70x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="console" position="110,550" size="550,426" font="Regular;23" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" zPosition="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend"/>
+	</screen>
+	
 </skin>
